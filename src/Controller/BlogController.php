@@ -46,7 +46,9 @@ class BlogController extends AbstractController
        
         if(!$article){
    
-        $article = new Article();
+        $article = new Article(); 
+        
+        }
 
            $form = $this->createForm(ArticleType::class, $article);
 
@@ -64,7 +66,7 @@ class BlogController extends AbstractController
             'editMode' => $article->getId() !== null
         ]);
     }
-}
+
 
 
     /**
