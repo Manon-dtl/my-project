@@ -29,12 +29,12 @@
 
         {% if not app.user %}
       <li class="nav-item">
-        <a href= "{{ path('security_login') }}" class="nav-link"> Connexion
+        <a href= "{{ path('security_login') }}" class="nav-link"> Connexion </a>
       </li>
 
         {% else %}
         <li class="nav-item">
-        <a href= "{{ path('security_login') }}" class="nav-link"> Déconnexion
+        <a href= "{{ path('security_login') }}" class="nav-link"> Déconnexion </a>
       </li>
       {% endif %}
       
